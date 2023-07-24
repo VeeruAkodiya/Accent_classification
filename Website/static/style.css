@@ -1,0 +1,235 @@
+/*Works well for 360*640 size devices */
+body
+{
+	margin: 0;
+}
+#input_image_container
+{
+	display: none;
+	position: relative;
+	width: 80%;
+	margin: auto;
+}
+#input_image
+{
+	position:relative; 
+	width: 150px;
+	height: 150px;
+	margin-left: 15vw;
+	display: none;
+}
+#top_pane
+{
+	/* height: 60vh; */
+	width: 100vw;
+	background-image: url("images/desktoppic1.jpg");
+	background-size: cover;
+	/*border-bottom-left-radius: 25%;
+	border-bottom-right-radius: 25%;*/
+	text-align: center;
+}
+#top_pane p
+{
+	display: inline;
+	color: white;
+	font-weight: bolder;
+	font-size: 1.7em;
+	position: relative;
+	top: 11vh;
+}
+.container
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+input
+{
+	font-size: 0.7em;
+}
+.custombutton
+{
+	height: 20vw;
+	width: 25vw;
+	margin: 5%;
+	padding: 1em;
+	border-radius: 1em;
+	box-shadow: 0 0 25px 1px rgb(0 0 0 / 50%);
+	text-align: center;
+}
+#tray
+{
+	position: relative;
+	top: 10vh;
+	margin-bottom: 10vh;
+}
+.output_screen
+{
+	position: relative;
+	top: 10vh;
+	text-align: center;
+	border: 1px solid black;
+	padding: 2em;
+}
+#output_chart
+{
+	position: relative;
+	margin-left: 10vw; 
+}
+#emotion_tags
+{
+	width: 25vw;
+}
+#emotion_tags ul
+{
+	list-style-type: none;
+	position: relative;
+}
+/*Quotes section*/
+.quotes_screen
+{
+	position: relative;
+	margin-top: 10vh;
+	display: flex;
+}
+.quotes_pane
+{
+	width: 80%;
+	background-color: pink;
+	height: 40vh;
+	background-image: url("images/pic21.jpg");
+	background-size: cover;
+	position: relative;
+	margin-top: 30vh;
+}
+.quote
+{
+	text-align: center;
+	padding: 1em;
+	width: 70%;
+	right: 0px;
+}
+/*All media queries starts from here*/
+@media screen and (min-width: 320px and max-width: 375px)
+{
+	.output_screen
+	{
+		margin-left: 4%;
+	}
+}
+/*Make sure this value corresponds to the bars in the graph*/
+li
+{
+	margin-top: 4.2vh;
+}
+/*768px is for ipad*/
+@media screen and (min-width: 768px and max-width: 868px)
+{
+	#input_image_container
+	{
+		margin-left: 40vw;
+	}
+	.custombutton
+	{
+		height: 11vw;
+		width: 15vw;
+	}
+	.output_screen
+	{
+		margin: 1.5em;
+	}
+	.quotes_pane
+	{
+		width: 40%;
+		margin-left: 5%;
+	}
+}
+/*869px is for larger ipads and desktop*/
+@media screen and (min-width: 869px and max-width: 885px)
+{
+	body
+	{
+		background-image: url("images/desktoppic1.jpg");
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 100vh;
+	}
+	#top_pane
+	{
+		background-image: none;	
+	}
+	#tray
+	{
+		top: 165vh;
+	}
+	.custombutton
+	{
+		height: 11vw;
+		width: 15vw;
+	}
+	#input_image_container
+	{
+		margin-left: 45vw;
+    	top: 150vh;
+	}
+	.output_screen
+	{
+		position: absolute;
+		top: 300vh;
+		left: 10vw;
+	}
+	.quotes_screen
+	{
+		position: relative;
+		margin-top: 250vh;
+	}
+	.quotes_pane
+	{
+		width: 40%;
+		margin-left: 5%;
+	}
+}
+@media screen and (min-width: 886px)
+{
+	body
+	{
+		background-image: url("images/desktoppic1.jpg");
+		background-repeat: no-repeat;
+	}
+	#top_pane
+	{
+		background-image: none;	
+	}
+	#tray
+	{
+		top: 55vh;
+	}
+	.custombutton
+	{
+		display: block;
+		background-color: #ddd;
+		height: 11vw;
+		width: 15vw;
+	}
+	#input_image_container
+	{
+		margin-left: 45vw;
+    	top: 150vh;
+	}
+	.output_screen
+	{
+		position: absolute;
+		top: 100vh;
+		left: 10vw;
+	}
+	.quotes_screen
+	{
+		position: relative;
+		/* margin-top: 250vh; */
+	}
+	.quotes_pane
+	{
+		width: 30%;
+		margin-left: 5%;
+	}
+}

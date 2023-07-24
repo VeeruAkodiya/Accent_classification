@@ -1,0 +1,6 @@
+1) Install libraries in requirements.txt
+2) Download Dataset from accentdb.org
+3) Preprocess it using functions in Model_code
+
+Website:
+Model included can be deployed directly 
